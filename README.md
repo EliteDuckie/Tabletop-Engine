@@ -1,21 +1,15 @@
-PyTabletop Engine 🎲🃏
+# 🎲 PyTabletop Engine
 
-A modular, object-oriented tabletop game engine and probability simulator built in Python.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Architecture](https://img.shields.io/badge/Architecture-OOP-success.svg)
 
-This project was developed to explore advanced Object-Oriented Programming (OOP) concepts, software architecture, and statistical simulation. Rather than hardcoding individual games, this engine provides a unified foundation for card manipulation, turn management, and probability tracking that can be extended to run various tabletop games.
+A modular, object-oriented tabletop game engine built in Python. This project demonstrates advanced software design patterns by running entirely different card games (like Blackjack and Uno) through a single unified architecture. 
 
-Currently implemented games:
+It replaces standalone, messy scripts with a scalable system designed for reusability and probability simulation.
 
-Blackjack (Including a probability simulation mode)
+## ✨ Features
 
-Uno (WIP)
-
-✨ Core Features
-
-Polymorphic Architecture: Uses abstract base classes for GameEngine, Card, and Deck to allow seamless integration of new game types with entirely different rule sets.
-
-Statistical Simulation Mode: Run thousands of headless games (e.g., Blackjack hands) in seconds to track win rates, optimal strategies, and house-edge probabilities.
-
-Pluggable AI Opponents: State-based bots that make decisions based on specific game rules (e.g., standard dealer rules for Blackjack).
-
-Clean State Management: Utilizes a state-machine-inspired game loop to handle transitions between setup, player turns, and evaluation phases.
+* **Unified Game Engine:** Core abstract classes (`BaseCard`, `BaseDeck`, `Player`) that easily extend to support any card-based game.
+* **Included Games:** Fully playable terminal versions of **Blackjack** and **Uno**.
+* **Probability Simulator:** Run thousands of automated hands to track win rates, bust probabilities, and deck distributions.
+* **Clean OOP Design:** Built using core engineering principles like Inheritance, Polymorphism, and the State pattern.
